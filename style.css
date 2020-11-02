@@ -49,19 +49,38 @@ body {
     padding-top: 60px;
   }
 
-  table {
-    border-collapse: collapse;
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     width: 100%;
   }
   
-  th, td {
-    text-align: left;
-    padding: 8px;
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
-  tr:nth-child(even){background-color: #f2f2f2}
-  
-  th {
-    background-color: #366999;
+  .container {
+    padding: 2px 16px;
+  }
+
+  footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
     color: white;
   }
+
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+ }
+
+a:link, a:visited {
+    color: white;
+}
