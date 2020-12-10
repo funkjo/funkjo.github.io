@@ -4,6 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+  .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
 <body>
 
 <!-- Navigation -->
@@ -14,12 +27,13 @@
   <a href="#contact" class="w3-button w3-bar-item">Contact</a>
 </nav>
 
-<!-- Slide Show -->
+<!-- Cover Image -->
 <section>
-  <img class="mySlides" src="images/mountains.jpg"
-  style="width:100%">
-  <img class="mySlides" src="images/49641885691_c88c1a63ab_k.jpg"
-  style="width:100%">
+  <div class="container">
+    <img src="images/mountains.jpg"
+    style="width:100%">
+    <div class="centered">John Funk's Portfolio</div>
+  </div>
 </section>
 
 <!-- Band Description -->
