@@ -1,92 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-    <div id="navbar">
-      <a href="index.html">Home</a>
-      <a class="active" href="javascript:void(0)">Projects</a>
-      <a href="contact.html">Contact</a>
-    </div>
 
-    <h2 style="text-align: center; padding-top: 40px;">Projects</h2>
+<body>
 
-    <table style="margin-left: auto; margin-right: auto;">
-      <tr>
-        <td>
-          <div class="card">
-            <a href="projects/senior_research/senior_research.html"><img src="images/senior_research_cover.png" alt="Avatar" style="width:100%"></a> <!--240x135 images-->
-            <div class="container">
-              <a href="projects/senior_research/senior_research.html" style="color: black;"><h4><b>Senior Research</b></h4></a>
-              <p>My senior year research project about<br/>creating a machine learning model to<br/>classify images from an image selection<br/>CAPTCHA dataset.</p> 
-            </div>
-          </div>
-        </td>
-        <td>
-          <p>&nbsp;&nbsp;</p>
-        </td>
-        <td>
-          <div class="card">
-            <img src="images/template.png" alt="Avatar" style="width:100%"> <!--240x135 images-->
-            <div class="container">
-              <h4><b>Project 2</b></h4> 
-              <p>Description</p> 
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-      </tr>
-      <tr>
-        <td>
-          <div class="card">
-            <img src="images/template.png" alt="Avatar" style="width:100%"> <!--240x135 images-->
-            <div class="container">
-              <h4><b>Project 3</b></h4> 
-              <p>Description</p> 
-            </div>
-          </div>
-        </td>
-        <td>
-          <p>&nbsp;&nbsp;</p>
-        </td>
-        <td>
-          <div class="card">
-            <img src="images/template.png" alt="Avatar" style="width:100%"> <!--240x135 images-->
-            <div class="container">
-              <h4><b>Project 4</b></h4> 
-              <p>Description</p> 
-            </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-      </tr>
-    </table>
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="index.html" class="w3-button w3-bar-item">Home</a>
+  <a href="javascript:void(0)" class="w3-button w3-bar-item">Projects</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+</nav>
 
-    <footer>
-      <p><a href="index.html">Home</a> | <a href="projects.html">Projects</a> | <a href="contact.html">Contact Me</a></p>
-    </footer>
-        
+<!-- Project Overview -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <br/>
+  <h2 class="w3-wide">PROJECTS</h2>
+  <br/>
+  <p class="w3-opacity"><i>An overview of my projects</i></p>
+  <p class="w3-justify">Welcome to my projects page. Here you can see the work that I have done in the field of machine learning.</p>
+  <br/>
+  <br/>
+</section>
 
-    <script>
-      window.onscroll = function() {myFunction()};
-      
-      var navbar = document.getElementById("navbar");
-      var sticky = navbar.offsetTop;
-      
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky")
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-      </script>
-  </body>
+<!-- Projects -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <a href="projects/senior_research/senior_research.html"><h4>Senior Research</h4></a>
+    <img src="images/Screen Shot 2020-12-04 at 2.23.07 AM.png" alt="Senior Research Project" style="width:100%">
+    <p>My senior year research project about creating a machine learning model to classify images from an image selection CAPTCHA dataset.</p>
+  </article>
+  <article class="w3-third">
+    <h4>Facial-Gender</h4>
+    <img src="images/Screen Shot 2020-12-10 at 3.34.09 PM.png" alt="ml-facial-gender" style="width:100%">
+    <p>An ongoing side project where I attempt to create a neural network to classify images from the UTKFace dataset as either male or female.</p>
+  </article>
+  <article class="w3-third">
+    <h4>Machine Learning Final</h4>
+    <img src="images/Screen Shot 2020-12-08 at 10.26.30 PM.png" alt="Machine Learning Final" style="width:100%">
+    <p>My final project for Introduction to Machine Learning where we evaluate various different models capabilities to predict employee attrition based on the IBM HR Dataset.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact Me</a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+
+
+</body>
 </html>
